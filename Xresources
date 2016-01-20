@@ -1,0 +1,100 @@
+XTerm*termName: xterm-256color
+XTerm*visualBell: false
+XTerm*marginBell: false
+XTerm*alwaysHighlight: false
+
+Xft.dpi:96
+
+xpdf.title: PDF
+
+XTerm*locale: true
+xterm.utf8: true
+XTerm*utf8Title: true
+
+xterm*xftAntialias: true
+
+XTerm*fontMenu*fontdefault*Label: Default
+!XTerm*faceName: Bitstream Vera Sans Mono:antialias=True:pixelsize=15
+!XTerm*faceName: Terminus:antialias=True:pixelsize=16
+XTerm*faceName: GohuFont:antialias=True:pixelsize=15
+
+XTerm*faceSize: 12
+XTerm*faceSize1: 12
+XTerm*faceSize2: 12
+XTerm*faceSize3: 12
+XTerm*faceSize4: 12
+XTerm*faceSize5: 12
+XTerm*faceSize6: 12
+XTerm.cjkWidth:true
+
+XTerm*scrollBar: falseXTerm*rightScrollBar: false
+XTerm*jumpScroll: true
+XTerm*scrollKey: false
+XTerm*scrollTtyOutput: false
+XTerm*SaveLines: 1000
+
+!中文支持
+xterm*faceNameDoublesize: WenQuanYi Zen Hei:pixelsize=14:antialias=True
+
+XTerm*loginShell: true
+
+xterm.geometry: 80x36
+xterm.borderLess: true
+xterm.cursorBlink: false
+xterm*colorUL: yellow
+xterm*colorBD: white
+
+!print color and bold/underline attributes
+xterm*printAttributes: 2
+xterm*printerCommand: cat > ~/xtermdump
+
+!mouse selecting to copy, ctrl-v to paste
+!Ctrl p to print screen content to file
+XTerm*VT100.Translations: #override \
+Ctrl <KeyPress> V: insert-selection(CLIPBOARD,PRIMARY,CUT_BUFFER0) \n\
+<BtnUp>: select-end(CLIPBOARD,PRIMARY,CUT_BUFFER0) \n\
+Ctrl <KeyPress> P: print() \n
+
+Xft.autohint: true
+Xft.antialias: true
+Xft.hinting: true
+Xft.hintstyle: hintslight
+Xft.rgba: rgb
+Xft.lcdfilter: lcddefault
+
+! special
+*.foreground:   #9ea7a6
+*.background:   #232c31
+*.cursorColor:  #9ea7a6
+
+! black
+*.color0:       #232c31
+*.color8:       #3f4944
+
+! red
+*.color1:       #2a5491
+*.color9:       #2a5491
+
+! green
+*.color2:       #237986
+*.color10:      #237986
+
+! yellow
+*.color3:       #a03b1e
+*.color11:      #a03b1e
+
+! blue
+*.color4:       #484d79
+*.color12:      #484d79
+
+! magenta
+*.color5:       #c59820
+*.color13:      #c59820
+
+! cyan
+*.color6:       #b02f30
+*.color14:      #b02f30
+
+! white
+*.color7:       #9ea7a6
+*.color15:      #b5d8f6
