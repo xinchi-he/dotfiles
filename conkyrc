@@ -22,7 +22,7 @@ draw_shades no
 draw_outline no
 draw_borders no
 stippled_borders 0
-alignment top_left
+alignment top_right
 gap_x 20
 gap_y 40
 uppercase no
@@ -67,6 +67,10 @@ ${fs_bar /home}
 ${color0}${stippled_hr 1 1}
 ${color2}${alignr}Network
 ${color1}down:${color0} ${totaldown enp3s0}${alignr}${color1}up:${color0} ${totalup enp3s0}
+${stippled_hr 1 1}
+${color2}${alignr}Weather
+${color1}Shenyang: ${alignr}${color0}${execi 3600 sh ~/weather.sh shenyang}
+${color1}Tulsa: ${alignr}${color0}${execi 3600 sh ~/weather.sh tulsa}
 ${stippled_hr 1 1}
 
 
