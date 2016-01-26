@@ -16,11 +16,11 @@
 #
 #xfce-mcs-manager &
 
-feh --bg-scale ~/Downloads/galaxy.png &
+feh --bg-scale ~/Downloads/blue.png &
 tint2 &
 fcitx &
 pnmixer &
 compton &
 nm-applet &
-conky &
 xfce4-power-manager &
+sleep 15 && conky &
