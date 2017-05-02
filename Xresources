@@ -14,8 +14,6 @@ XTerm*utf8Title: true
 xterm*xftAntialias: true
 
 XTerm*fontMenu*fontdefault*Label: Default
-!XTerm*faceName: Bitstream Vera Sans Mono:antialias=True:pixelsize=15
-!XTerm*faceName: Terminus:antialias=True:pixelsize=16
 XTerm*faceName: GohuFont:antialias=True:pixelsize=15
 
 XTerm*faceSize: 12
@@ -38,7 +36,7 @@ xterm*faceNameDoublesize: WenQuanYi Zen Hei:pixelsize=14:antialias=True
 
 XTerm*loginShell: true
 
-xterm.geometry: 80x36
+xterm.geometry: 400x300
 xterm.borderLess: true
 xterm.cursorBlink: false
 xterm*colorUL: yellow
@@ -98,3 +96,22 @@ Xft.lcdfilter: lcddefault
 ! white
 *.color7:       #9ea7a6
 *.color15:      #b5d8f6
+
+! ------------------------------------------------------------------------------
+! ROFI Color theme
+! ------------------------------------------------------------------------------
+
+! Use extended color scheme
+rofi.color-enabled:                  true
+! Color scheme for normal row
+rofi.color-normal:                   argb:00000000, #1aa, argb:11FFFFFF, #1aa,#333
+! Color scheme for urgent row
+rofi.color-urgent:                   argb:00000000, #f99, argb:11FFFFFF, #f99,#333
+! Color scheme for active row
+rofi.color-active:                   argb:00000000, #aa1, argb:11FFFFFF, #aa1,#333
+! Color scheme window
+rofi.color-window:                   argb:ee333333, #1aa,#1aa
+! Separator style (none, dash, solid)
+rofi.separator-style:                dash
+
+rofi.font: GohuFont bold 12
