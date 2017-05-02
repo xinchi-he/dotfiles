@@ -1,0 +1,8 @@
+# required by google-chrome (argument)
+>=www-client/google-chrome-52.0.2743.116 google-chrome
+# required by virtualbox-bin (argument)
+=app-emulation/virtualbox-bin-4.3.38.106717 PUEL
+# required by oracle-jdk-bin (argument)
+>=dev-java/oracle-jdk-bin-1.8.0.102 Oracle-BCLA-JavaSE
+
+app-emulation/virtualbox-bin PUEL

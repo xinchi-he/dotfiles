@@ -1,0 +1,5 @@
+net-misc/iputils -caps -filecaps
+# required by media-sound/pulseaudio-8.0::gentoo[alsa-plugin,alsa]
+# required by media-sound/pavucontrol-3.0::gentoo
+# required by pavucontrol (argument)
+>=media-plugins/alsa-plugins-1.0.29 pulseaudio
