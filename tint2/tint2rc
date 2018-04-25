@@ -53,7 +53,7 @@ task_urgent_icon_asb = 100 0 0
 task_iconified_icon_asb = 100 0 0
  
 # Fonts
-task_font = Roboto 9
+task_font = Roboto 10
 task_font_color = #dcdcdc 100
 task_active_font_color = #FFFFFF 100
 task_urgent_font_color = #FFFFFF 100
@@ -86,7 +86,7 @@ tooltip_padding = 2 2
 tooltip_show_timeout = 0.0
 tooltip_hide_timeout = 0.0
 tooltip_background_id = 2
-tooltip_font = Ubuntu 9
+tooltip_font = Roboto 10
 tooltip_font_color = #FFFFFF 100
  
 # Mouse
