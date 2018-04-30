@@ -3,14 +3,15 @@ URxvt.termNmae: rxvt-unicode-256color
 URxvt.borderLess:False
 URxvt.cursorBlink:False
 URxvt.saveLines:65536
-URxvt.scrollBar:True
-URxvt.scrollBar_right:True
+URxvt.scrollBar:False
+URxvt.scrollBar_right:False
 URxvt.scrollBar_floating:False
 URxvt.scrollstyle:plain
 URxvt.scrollTtyOutput:False
 URxvt.scrollWithBuffer:True
 URxvt.scrollTtyKeypress:True
 URxvt.iconFile: /usr/share/icons/gnome/16x16/apps/terminal.png
+URxvt.geometry:200x80
 
 ! URxvt shortkeys
 !URxvt.keysym.F11: perl:fullscreen:switch
@@ -26,43 +27,47 @@ URxvt.preeditType:OffTheSpot
 URxvt.inputMethod:fcitx
 
 ! Fonts
-URxvt.font: xft:Gohu GohuFont:size=10:atialias=true:hinting=true, xft:Source Han Sans CN Normal:size=10
-URxvt.boldfont: xft:Gohu GohuFont:bold:size=10:atialias=true:hinting=true, xft:Source Han Sans CN Normal:style=Bold:size=10
+URxvt.font: xft:xos4 Terminess Powerline:size=10:antialias=True, xft:思源黑体 CN:size=12:antialias=True
+URxvt.boldfont: xft:xos4 Terminess Powerline:bold:size=10:antialias=True, xft:思源黑体 CN:bold:size=12:antialias=True
 
 ! Colorscheme: Solarized light
-URxvt.depth:32
-URxvt.background:            #fdf7e3
-URxvt.foreground:            #657b83
-URxvt.fading:                40
-URxvt.fadeColor:             #fdf6e3
-URxvt.cursorColor:           #586e75
-URxvt.pointerColorBackground:#93a1a1
-URxvt.pointerColorForeground:#586e75
-!! black dark/light
-URxvt.color0:                #073642
-URxvt.color8:                #002b36
-!! red dark/light
-URxvt.color1:                #dc322f
-URxvt.color9:                #cb4b16
-!! green dark/light
-URxvt.color2:                #859900
-URxvt.color10:               #586e75
-!! yellow dark/light
-URxvt.color3:                #b58900
-URxvt.color11:               #657b83
-!! blue dark/light
-URxvt.color4:                #268bd2
-URxvt.color12:               #839496
-!! magenta dark/light
-URxvt.color5:                #d33682
-URxvt.color13:               #6c71c4
-!! cyan dark/light
-URxvt.color6:                #2aa198
-URxvt.color14:               #93a1a1
-!! white dark/light
-URxvt.color7:                #eee8d5
-URxvt.color15:               #fdf6e3
 
+! -----------------------------------------------------------------------------
+! File: gruvbox-dark.xresources
+! Description: Retro groove colorscheme generalized
+! Author: morhetz <morhetz@gmail.com>
+! Source: https://github.com/morhetz/gruvbox-generalized
+! Last Modified: 6 Sep 2014
+! -----------------------------------------------------------------------------
+
+! hard contrast: *background: #1d2021
+*background: #282828
+! soft contrast: *background: #32302f
+*foreground: #ebdbb2
+! Black + DarkGrey
+*color0:  #282828
+*color8:  #928374
+! DarkRed + Red
+*color1:  #cc241d
+*color9:  #fb4934
+! DarkGreen + Green
+*color2:  #98971a
+*color10: #b8bb26
+! DarkYellow + Yellow
+*color3:  #d79921
+*color11: #fabd2f
+! DarkBlue + Blue
+*color4:  #458588
+*color12: #83a598
+! DarkMagenta + Magenta
+*color5:  #b16286
+*color13: #d3869b
+! DarkCyan + Cyan
+*color6:  #689d6a
+*color14: #8ec07c
+! LightGrey + White
+*color7:  #a89984
+*color15: #ebdbb2
 
 Xft.autohint: true
 Xft.antialias: true
@@ -70,9 +75,3 @@ Xft.hinting: true
 Xft.hintstyle: hintslight
 Xft.rgba: rgb
 Xft.lcdfilter: lcddefault
-
-
-
-rofi.separator-style:                dash
-
-rofi.font: Gohu\ GohuFont bold 12
