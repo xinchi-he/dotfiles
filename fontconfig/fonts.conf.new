@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<!DOCTYPE fontconfig SYSTEM "fonts.dtd">
+<fontconfig>
+<!-- created by WenQuanYi FcDesigner v0.5 -->
+<match>
+	<test name="family"><string>sans-serif</string></test>
+	<edit name="family" mode="prepend" binding="strong">
+		<string>Droid Sans</string>
+		<string>Source Han Sans CN</string>
+	</edit>
+</match>
+<match>
+	<test name="family"><string>serif</string></test>
+	<edit name="family" mode="prepend" binding="strong">
+		<string>Droid Serif</string>
+		<string>Source Han Sans CN</string>
+	</edit>
+</match>
+<match>
+	<test name="family"><string>monospace</string></test>
+	<edit name="family" mode="prepend" binding="strong">
+		<string>Droid Sans Mono</string>
+		<string>DejaVu Sans Mono</string>
+	</edit>
+</match>
+</fontconfig>

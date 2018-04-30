@@ -1,41 +1,41 @@
-# ~/.conkyrc
-#
-double_buffer yes
-background yes
+conky.config = {
+	double_buffer = true,
+	background = true,
 
-use_xft yes
-xftalpha 1.0
+	use_xft = true,
+	xftalpha = 1.0,
 
-update_interval 3.0
- 
-total_run_times 0
+	update_interval = 3.0,
 
-own_window yes
-own_window_type normal
-own_window_transparent yes
-own_window_hints undecorated,below,skip_taskbar,sticky,skip_pager
-own_window_class conky
-no_buffers no
-minimum_size 200 500
-maximum_width 200
-draw_shades no
-draw_outline no
-draw_borders no
-stippled_borders 0
-alignment top_right
-gap_x 20
-gap_y 40
-uppercase no
-text_buffer_size 1024
+	total_run_times = 0,
 
-use_spaces yes
+	own_window = true,
+	own_window_type = 'normal',
+	own_window_transparent = true,
+	own_window_hints = 'undecorated,below,skip_taskbar,sticky,skip_pager',
+	own_window_class = 'conky',
+	no_buffers = false,
+	minimum_width = 200, minimum_height = 500,
+	maximum_width = 200,
+	draw_shades = false,
+	draw_outline = false,
+	draw_borders = false,
+	stippled_borders = 0,
+	alignment = 'top_right',
+	gap_x = 20,
+	gap_y = 40,
+	uppercase = false,
+	text_buffer_size = 1024,
 
-color0 d4c4a9
-color1 93a2cc
-color2 cc9393
 
-TEXT
-${font conkycolorslogos:size=24}${color2}a${font Terminus:size=8}${color2}${alignr}System
+	color0 = '#d4c4a9',
+	color1 = '#93a2cc',
+	color2 = '#cc9393',
+
+};
+
+conky.text = [[
+${font conkycolorslogos:size=24}${color2}a${font xos4 Terminess Powerline:size=8}${color2}${alignr}System
 ${color1}kernel: ${color0}${kernel}
 ${color1}hostname: ${color0}${nodename}
 ${color1}uptime:${color0} $uptime
@@ -47,6 +47,9 @@ ${color1}temp: ${color0}${execi 10 sensors | grep -i "Core 1:" | cut -c 16-19}°
 ${stippled_hr 1 1}
 ${color2}${alignr}Memory
 ${color1}ram: ${color0}$memperc%${alignr}${membar 6,135}
+${stippled_hr 1 1}
+${color2}${alignr}Swap
+${color1}swap: ${color0}$swapperc%${alignr}${swapbar 6,135}
 ${stippled_hr 1 1}
 ${color2}${alignr}Processes: ${running_processes}/${processes}
 ${color1}name:  $alignr PID     CPU
@@ -62,16 +65,15 @@ ${stippled_hr 1 1}
 ${color2}${alignr}Disks
 ${color1}root: ${alignr}${color0}${fs_free /}/${fs_size /}
 ${fs_bar /}
-${color1}home: ${alignr}${color0}${fs_free /home}/${fs_size /home}
-${fs_bar /home}
 ${color0}${stippled_hr 1 1}
 ${color2}${alignr}Network
-${color1}down:${color0} ${totaldown enp3s0}${alignr}${color1}up:${color0} ${totalup enp3s0}
+${color1}down:${color0} ${totaldown wlp0s12f0}${alignr}${color1}up:${color0} ${totalup wlp0s12f0}
 ${stippled_hr 1 1}
 ${color2}${alignr}Weather
-${color1}shenyang: ${alignr}${color0}${texeci 3600 sh ~/weather.sh shenyang}
-${color1}tulsa: ${alignr}${color0}${texeci 3600 sh ~/weather.sh tulsa}
+${color1}shenyang: ${alignr}${color0}${texeci 3600 sh ~/dotfiles/conky/weather.sh shenyang}
+${color1}tulsa: ${alignr}${color0}${texeci 3600 sh ~/dotfiles/conky/weather.sh tulsa}
 ${stippled_hr 1 1}
 
 
-${alignc}${font Terminus:size=8}${color0}
+${alignc}${font xos4 Terminess Powerline:size=8}${color0}
+]];
