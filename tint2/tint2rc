@@ -1,13 +1,13 @@
 # ID 1
 rounded = 0
 border_width = 1
-background_color = #323A45 100
+background_color = #2F343F 100
 border_color = #484848 100
  
 # ID 2
 rounded = 0
 border_width = 0
-background_color = #DE5362 100
+background_color = #DC143C 100
 border_color = #000000 100
  
 # Panel
