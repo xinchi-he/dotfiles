@@ -14,7 +14,7 @@ XTerm*utf8Title: true
 xterm*xftAntialias: true
 
 XTerm*fontMenu*fontdefault*Label: Default
-XTerm*faceName: Gohu GohuFont:antialias=True:pixelsize=15
+XTerm*faceName: GohuFont:antialias=True:pixelsize=15
 
 XTerm*faceSize: 12
 XTerm*faceSize1: 12
@@ -25,15 +25,14 @@ XTerm*faceSize5: 12
 XTerm*faceSize6: 12
 XTerm.cjkWidth:true
 
-XTerm*scrollBar: false
-XTerm*rightScrollBar: false
+XTerm*scrollBar: falseXTerm*rightScrollBar: false
 XTerm*jumpScroll: true
 XTerm*scrollKey: false
 XTerm*scrollTtyOutput: false
 XTerm*SaveLines: 1000
 
 !中文支持
-xterm*faceNameDoublesize: Source Han Sans CN:pixelsize=14:antialias=True
+xterm*faceNameDoublesize: WenQuanYi Zen Hei:pixelsize=14:antialias=True
 
 XTerm*loginShell: true
 
@@ -61,57 +60,42 @@ Xft.hintstyle: hintslight
 Xft.rgba: rgb
 Xft.lcdfilter: lcddefault
 
-
+! special
 *.foreground:   #9ea7a6
-*.background:   #2f343f
+*.background:   #232c31
 *.cursorColor:  #9ea7a6
 
-!! jellybeans colors
-! 8 8 8
-! *background: #080808
-! 128 128 128
-! *foreground: #808080
 ! black
-! 26 26 26
-*color0:  #1a1a1a
-! 64 64 64
-*color8:  #404040
-! red
-! 215 95 95
-*color1:  #d75f5f
-! 234 132 132
-*color9:  #EA8484
-! green
-! 135 175 95
-*color2:  #87af5f
-! 199 240 159
-*color10: #C7F09F
-! yellow
-! 255 175 95
-*color3:  #ffaf5f
-! 255 204 154
-*color11: #FFCC9A
-! blue
-! 135 175 215
-*color4:  #87afd7
-! 165 202 239
-*color12: #a5caef
-! magenta
-! 135 135 175
-*color5:  #8787af
-! 166 166 222
-*color13: #A6A6DE
-! cyan
-! 95 135 135
-*color6:  #5f8787
-! 105 178 178
-*color14: #69b2b2
-! white
-! 128 128 128
-*color7:  #808080
-! 215 215 215
-*color15: #d7d7d7
+*.color0:       #232c31
+*.color8:       #3f4944
 
+! red
+*.color1:       #2a5491
+*.color9:       #2a5491
+
+! green
+*.color2:       #237986
+*.color10:      #237986
+
+! yellow
+*.color3:       #a03b1e
+*.color11:      #a03b1e
+
+! blue
+*.color4:       #484d79
+*.color12:      #484d79
+
+! magenta
+*.color5:       #c59820
+*.color13:      #c59820
+
+! cyan
+*.color6:       #b02f30
+*.color14:      #b02f30
+
+! white
+*.color7:       #9ea7a6
+*.color15:      #b5d8f6
 
 ! ------------------------------------------------------------------------------
 ! ROFI Color theme
@@ -130,4 +114,4 @@ rofi.color-window:                   argb:ee333333, #1aa,#1aa
 ! Separator style (none, dash, solid)
 rofi.separator-style:                dash
 
-rofi.font: Gohu GohuFont bold 12
+rofi.font: GohuFont bold 12
