@@ -1,41 +1,36 @@
-XTerm*termName: xterm-256color
-XTerm*visualBell: false
-XTerm*marginBell: false
-XTerm*alwaysHighlight: false
-
-Xft.dpi:96
+xterm*termName: xterm-256color
+xterm*visualBell: false
+xterm*marginBell: false
+xterm*alwaysHighlight: false
 
 xpdf.title: PDF
 
-XTerm*locale: true
+xterm*locale: true
 xterm.utf8: true
-XTerm*utf8Title: true
-
+xterm*utf8Title: true
 xterm*xftAntialias: true
 
-XTerm*fontMenu*fontdefault*Label: Default
-XTerm*faceName: Gohu GohuFont:antialias=True:pixelsize=15
-
-XTerm*faceSize: 12
-XTerm*faceSize1: 12
-XTerm*faceSize2: 12
-XTerm*faceSize3: 12
-XTerm*faceSize4: 12
-XTerm*faceSize5: 12
-XTerm*faceSize6: 12
-XTerm.cjkWidth:true
-
-XTerm*scrollBar: false
-XTerm*rightScrollBar: false
-XTerm*jumpScroll: true
-XTerm*scrollKey: false
-XTerm*scrollTtyOutput: false
-XTerm*SaveLines: 1000
-
-!中文支持
+xterm*faceName: Gohu GohuFont:antialias=True:pixelsize=15
 xterm*faceNameDoublesize: Source Han Sans CN:pixelsize=14:antialias=True
 
-XTerm*loginShell: true
+xterm*faceSize: 12
+xterm*faceSize1: 12
+xterm*faceSize2: 12
+xterm*faceSize3: 12
+xterm*faceSize4: 12
+xterm*faceSize5: 12
+xterm*faceSize6: 12
+xterm.cjkWidth:true
+
+xterm*scrollBar: false
+xterm*rightScrollBar: false
+xterm*jumpScroll: true
+xterm*scrollKey: false
+xterm*scrollTtyOutput: false
+xterm*SaveLines: 1000
+
+
+xterm*loginShell: true
 
 xterm.geometry: 400x300
 xterm.borderLess: true
@@ -54,6 +49,7 @@ Ctrl <KeyPress> V: insert-selection(CLIPBOARD,PRIMARY,CUT_BUFFER0) \n\
 <BtnUp>: select-end(CLIPBOARD,PRIMARY,CUT_BUFFER0) \n\
 Ctrl <KeyPress> P: print() \n
 
+Xft.dpi:96
 Xft.autohint: true
 Xft.antialias: true
 Xft.hinting: true
